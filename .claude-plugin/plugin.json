@@ -1,0 +1,21 @@
+{
+  "name": "claude-codex-orchestrator",
+  "version": "1.0.0",
+  "description": "Multi-agent CLI orchestrator for Claude Code: Claude scopes, reviews and verifies; Codex (GPT) implements inside a scope-enforced harness that mechanically reverts anything outside a file allowlist.",
+  "author": {
+    "name": "Narayan Lamichhane",
+    "url": "https://github.com/Narayan-Lamichhane13"
+  },
+  "homepage": "https://github.com/Narayan-Lamichhane13/claude-codex-orchestrator",
+  "repository": "https://github.com/Narayan-Lamichhane13/claude-codex-orchestrator",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "multi-agent",
+    "orchestrator",
+    "gpt",
+    "cross-model-review",
+    "statusline"
+  ]
+}

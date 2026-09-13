@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-codex-orchestrator",
+  "description": "Claude scopes, reviews and verifies; Codex (GPT) implements inside a scope-enforced harness. Cross-model review for Claude Code.",
+  "owner": {
+    "name": "Narayan Lamichhane",
+    "url": "https://github.com/Narayan-Lamichhane13"
+  },
+  "plugins": [
+    {
+      "name": "claude-codex-orchestrator",
+      "source": "./",
+      "description": "Multi-agent CLI orchestrator: Claude does the thinking, Codex does the typing, and a mechanical file allowlist keeps GPT from sprawling beyond the task.",
+      "category": "development",
+      "author": {
+        "name": "Narayan Lamichhane"
+      },
+      "homepage": "https://github.com/Narayan-Lamichhane13/claude-codex-orchestrator"
+    }
+  ]
+}

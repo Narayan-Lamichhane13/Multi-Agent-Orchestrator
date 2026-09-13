@@ -1,0 +1,15 @@
+# dependencies (none required, but keep any local experiments out)
+node_modules/
+
+# local state / logs
+*.log
+.DS_Store
+Thumbs.db
+
+# never commit credentials of any kind
+.env
+.env.*
+*.pem
+*.key
+auth.json
+.credentials.json

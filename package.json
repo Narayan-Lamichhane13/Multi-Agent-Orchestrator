@@ -1,0 +1,44 @@
+{
+  "name": "claude-codex-orchestrator",
+  "version": "1.0.0",
+  "description": "Multi-agent CLI orchestrator for Claude Code: Claude scopes, reviews and verifies; Codex (GPT) implements inside a scope-enforced harness.",
+  "type": "module",
+  "bin": {
+    "claude-codex-orchestrator": "./bin/cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "doctor": "node scripts/codex-doctor.mjs",
+    "install-local": "node install.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    ".claude-plugin/",
+    "agents/",
+    "skills/",
+    "scripts/",
+    "statusline/",
+    "bin/",
+    "docs/",
+    "install.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Narayan-Lamichhane13/claude-codex-orchestrator.git"
+  },
+  "keywords": [
+    "claude-code",
+    "codex",
+    "multi-agent",
+    "orchestrator",
+    "gpt",
+    "cross-model-review",
+    "statusline"
+  ],
+  "author": "Narayan Lamichhane",
+  "license": "MIT"
+}

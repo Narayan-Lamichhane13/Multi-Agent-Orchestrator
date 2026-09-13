@@ -1,0 +1,34 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: node ${{ matrix.node }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        node: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Configure git for the test repos
+        run: |
+          git config --global user.email "ci@example.com"
+          git config --global user.name "ci"
+      - run: npm test
+      - name: Syntax-check every entry point
+        run: |
+          node --check bin/cli.mjs
+          node --check install.mjs
+          node --check scripts/codex-scoped-run.mjs
+          node --check scripts/codex-doctor.mjs
+          node --check scripts/lib/ui.mjs
+          node --check statusline/statusline.mjs
