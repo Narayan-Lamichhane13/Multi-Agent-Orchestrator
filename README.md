@@ -4,7 +4,7 @@
 
 A multi-agent CLI orchestrator plugin for [Claude Code](https://claude.com/claude-code). It routes each phase of a coding task to the model family that's stronger at it — **Claude** researches, scopes, reviews, and verifies; **Codex (GPT)** writes the implementation — and wraps the Codex step in a harness that *mechanically reverts anything it touches outside the files you allowed*.
 
-[![tests](https://github.com/Narayan-Lamichhane13/claude-codex-orchestrator/actions/workflows/test.yml/badge.svg)](https://github.com/Narayan-Lamichhane13/claude-codex-orchestrator/actions/workflows/test.yml)
+[![tests](https://github.com/Narayan-Lamichhane13/Multi-Agent-Orchestrator/actions/workflows/test.yml/badge.svg)](https://github.com/Narayan-Lamichhane13/Multi-Agent-Orchestrator/actions/workflows/test.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![node ≥18](https://img.shields.io/badge/node-%E2%89%A518-brightgreen)
 ![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
@@ -35,7 +35,7 @@ Then pick one:
 Inside Claude Code:
 
 ```
-/plugin marketplace add Narayan-Lamichhane13/claude-codex-orchestrator
+/plugin marketplace add Narayan-Lamichhane13/Multi-Agent-Orchestrator
 /plugin install claude-codex-orchestrator@claude-codex-orchestrator
 ```
 
@@ -48,8 +48,8 @@ npx claude-codex-orchestrator install --statusline-only
 ### Copy-mode (no plugin system)
 
 ```bash
-git clone https://github.com/Narayan-Lamichhane13/claude-codex-orchestrator
-cd claude-codex-orchestrator
+git clone https://github.com/Narayan-Lamichhane13/Multi-Agent-Orchestrator
+cd Multi-Agent-Orchestrator
 node install.mjs            # add --dry-run to preview, --with-claude-md to add the routing rule
 ```
 
